@@ -122,7 +122,7 @@ if [[ "$resposta" = '1' ]]; then
     rm 2lHZ43 >/dev/null 2>&1
     cd /bin/ >/dev/null 2>&1
     rm v2raymanager >/dev/null 2>&1
-    wget https://raw.githubusercontent.com/kiritosshxd/SSHPLUS/main/Modulos/v2raymanager >/dev/null 2>&1
+    wget https://raw.githubusercontent.com/MadrugaNET/SSHPLUS/main/Modulos/v2raymanager >/dev/null 2>&1
     wget https://www.dropbox.com/s/5gl6be0b60dny0j/botteste.sh >/dev/null 2>&1
     chmod 777 v2raymanager >/dev/null 2>&1
     chmod 777 botteste.sh >/dev/null 2>&1
@@ -233,7 +233,7 @@ elif [[ "$resposta" = '2' ]]; then
     rm 2lHZ43 >/dev/null 2>&1
     cd /bin/ >/dev/null 2>&1
     rm v2raymanager >/dev/null 2>&1
-    wget https://raw.githubusercontent.com/kiritosshxd/SSHPLUS/main/Modulos/v2raymanager >/dev/null 2>&1
+    wget https://raw.githubusercontent.com/MadrugaNET/SSHPLUS/main/Modulos/v2raymanager >/dev/null 2>&1
     wget https://www.dropbox.com/s/5gl6be0b60dny0j/botteste.sh >/dev/null 2>&1
     chmod 777 v2raymanager >/dev/null 2>&1
     chmod 777 botteste.sh >/dev/null 2>&1

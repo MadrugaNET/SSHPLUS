@@ -61,7 +61,7 @@ shell_version="1.183"
 tsp_cfg_version="0.61.1"
 #install_mode="docker"
 upgrade_mode="none"
-github_branch="master"
+github_branch="main"
 version_cmp="/tmp/version_cmp.tmp"
 tsp_conf_dir="/etc/tls-shunt-proxy"
 trojan_conf_dir="/etc/trojan-go"
@@ -592,7 +592,7 @@ install_docker() {
 }
 
 install_tsp() {
-    bash <(curl -L -s https://raw.githubusercontent.com/liberal-boy/tls-shunt-proxy/master/dist/install.sh)
+    bash <(curl -L -s https://raw.githubusercontent.com/liberal-boy/tls-shunt-proxy/main/dist/install.sh)
     judge "Instalar TLS-Shunt-Proxy"
     chown -R tls-shunt-proxy:tls-shunt-proxy /etc/ssl/tls-shunt-proxy
     command -v setcap >/dev/null 2>&1 && setcap "cap_net_bind_service=+ep" /usr/local/bin/tls-shunt-proxy
@@ -824,7 +824,7 @@ upgrade_tsp() {
         case $update_confirm in
         [yY][eE][sS] | [yY])
             config_exist_check "${tsp_conf}"
-            bash <(curl -L -s https://raw.githubusercontent.com/liberal-boy/tls-shunt-proxy/master/dist/install.sh)
+            bash <(curl -L -s https://raw.githubusercontent.com/liberal-boy/tls-shunt-proxy/main/dist/install.sh)
             judge "Atualização TLS-Shunt-Proxy"
             systemctl daemon-reload && systemctl reset-failed
             systemctl enable tls-shunt-proxy && systemctl restart tls-shunt-proxy
@@ -1280,7 +1280,7 @@ menu() {
         case $kernel_change in
         YES)
             [ -f "tcp.sh" ] && rm -rf ./tcp.sh
-            wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/master/tcpx.sh" && chmod +x tcpx.sh && ./tcpx.sh
+            wget -N --no-check-certificate "https://raw.githubusercontent.com/ylx2016/Linux-NetSpeed/main/tcpx.sh" && chmod +x tcpx.sh && ./tcpx.sh
             ;;
         *)
             echo -e "${RedBG} Deixe-me pensar de novo ${Font}"
